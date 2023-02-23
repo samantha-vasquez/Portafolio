@@ -8,46 +8,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
     <title>Samantha / Developer</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="../index.html">Home</a> </li>
-                <li><a href="./ux-ui.html">Ux-Ui</a> </li>
-                <li> <a href="./backend.html">backend</a></li>
-                <li><a href="./frontend.html">Frontend</a></li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
+    <!-- inicio del contenedor base -->
+    <div class="container_inicial">
 
-    </header>
-    <img src="../imagenes/bluviolet.jpg" alt="fondo" width="100%">
-    <img src="../imagenes/ux.jpg" alt="imagen ux">
-    <section>
-        <form action="" name="test">
-            <label for="nombre">Ingresa tu nombre</label><br>
-            <input type="text" name="nombre" placeholder="ingrese su nombre"><br>
+        <!-- header -->
+        <header class="header">
 
-            <label for="apellido">Ingresa tu apellido</label><br>
-            <input type="text" name="apellido" placeholder="ingrese su apellido"><br>
-
-            <label for="email">dejanos tu email</label><br>
-            <input type="email" name="email"><br>
-        </form>
-    </section>
-    <footer>
-        <section>
-            <nav>
-                <i class="fa-brands fa-twitter"> </i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-tiktok"></i>
+            <nav class="menu">
+                <ul>
+                    <div class="logo"></div>
+                    <li> <a href="../index.html">Inicio</a></li>
+                    <li> <a href="./Proyectos.html">Proyectos</a></li>
+                </ul>
             </nav>
-        </section>
-    </footer>
+        </header>
+        <!-- header -->
+
+        <!-- Main -->
+        <main>
+            <section class="container_formulario">
+
+                <article class="formulario">
+                    <form action="" name="test">
+
+                        <div class="nombre">
+                            <label for="nombre">Ingresa tu nombre</label><br>
+                            <input type="text" name="nombre" placeholder="ingrese su nombre"><br>
+                        </div>
+
+                        <div class="apellido">
+                            <label for="apellido">Ingresa tu apellido</label><br>
+                            <input type="text" name="apellido" placeholder="ingrese su apellido"><br>
+                        </div>
+
+                        <div class="comentario">
+                            <label for="comentario">Comentario</label><br>
+                            <textarea class="textarea" name="comentarios" rows="20" cols="100"
+                                placeholder="Me gustaría recibir información de..."></textarea> <br>
+                        </div>
+                        <div class="buttom"><button class="buttom_primario">Enviar</button></div>
+                    </form>
+                </article>
+
+                <article class="img_formulario">
+                    <img src="../imagenes/ux.jpg" alt="imagen ux">
+                </article>
+
+                <div class="whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-6x "></i>
+                </div>
+            </section>
+        </main>
+        <!-- Main -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="info">
+                Developer - Samantha Vasquez
+            </div>
+
+            <section class="icons">
+                <i class="fa-brands fa-behance fa-1x"></i>
+                <i class="fa-brands fa-linkedin fa-1x"></i>
+                <i class="fa-solid fa-envelope fa-1x"></i>
+            </section>
+        </footer>
+        <!-- footer -->
+    </div>
+    <!-- fin del contenedor base -->
 </body>
 
 </html>

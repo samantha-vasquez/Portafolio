@@ -8,66 +8,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Samantha Vasquez / Home</title>
-    <link rel="stylesheet" href="./css/home.css">
+   
 
 </head>
 
 <script>
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDNZH96ts3D7MQsFazx86FrWysHz_lqKyY",
-  authDomain: "portafolio-96927.firebaseapp.com",
-  projectId: "portafolio-96927",
-  storageBucket: "portafolio-96927.appspot.com",
-  messagingSenderId: "297399717917",
-  appId: "1:297399717917:web:159d979b1f4933cafe76f4",
-  measurementId: "G-QDYVBMB8RE"
-};
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyDNZH96ts3D7MQsFazx86FrWysHz_lqKyY",
+        authDomain: "portafolio-96927.firebaseapp.com",
+        projectId: "portafolio-96927",
+        storageBucket: "portafolio-96927.appspot.com",
+        messagingSenderId: "297399717917",
+        appId: "1:297399717917:web:159d979b1f4933cafe76f4",
+        measurementId: "G-QDYVBMB8RE"
+    };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
 </script>
 
 <body>
-    <header>
-        <nav>
-            <ul>
 
-                <li> <a href="./pages/ux-ui.html">Ux-Ui</a></li>
-                <li> <a href="./pages/backend.html">backend</a></li>
-                <li><a href="./pages/frontend.html">Frontend</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+ <!-- inicio del contenedor base -->
+ <div class="container_inicial">
+
+    <!-- header -->
+    <header class="header">
+
+        <nav class="menu">
+            <ul>
+                <div class="logo"></div>
+                
+                <li> <a href="./pages/Proyectos.html">Proyectos</a></li> 
+                <li> <a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-    
-        <div class="img_container"> 
-           
+    <!-- main -->
+    <main class="descripcion">
+        <section class="fotografia"></section>
+        <section class="biografia">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet neque doloribus excepturi voluptatibus quas nemo fuga, odio quod, incidunt mollitia magni, ipsum expedita error est laboriosam! Itaque, culpa! Id, ullam.
+            Neque aspernatur veritatis commodi animi accusamus tenetur quibusdam ab placeat beatae ipsa. Quia ipsum aut nulla dolores et eaque magni nihil voluptate velit sunt, reprehenderit possimus aperiam maiores nemo quae!
+            Nisi veniam voluptates non magni deleniti maiores modi accusantium, numquam deserunt sit enim nihil facilis velit in illum est incidunt ad tempora labore. Esse ex excepturi doloremque rem doloribus quod.
+            Perspiciatis distinctio reprehenderit quam nam eveniet, tempore, dolorum non voluptate aut, vel ea quae! Magnam odio sit saepe nobis nesciunt! Perspiciatis accusamus autem eveniet debitis dolor velit repudiandae. Molestias, quidem!</p>
+        </section>
 
-        </div>
     </main>
+   <!-- main -->
 
-    <footer>
-            <nav>
-                <i class="fa-brands fa-twitter"> </i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-tiktok"></i>
-            </nav>
-       
+    <!-- footer -->
+    <footer class="footer">
+        <div class="info">
+            Developer - Samantha Vasquez
+        </div>
+
+        <section class="icons">
+            <i class="fa-brands fa-behance fa-1x"></i>
+            <i class="fa-brands fa-linkedin fa-1x"></i>
+            <i class="fa-solid fa-envelope fa-1x"></i>
+        </section>
     </footer>
+    <!-- footer -->
 
+</div>
+<!-- fin del contenedor base -->
 </body>
 
 </html>
